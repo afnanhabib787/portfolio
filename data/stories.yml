@@ -1,0 +1,100 @@
+version: "3.1"
+
+stories:
+- story: path_computer vision
+  steps:
+  - intent: can_projects
+  - action: utter_can_projects
+  - intent: done_projects
+  - action: utter_projects
+  - intent: project_computer_vision
+  - action: utter_project_computer_vision
+  - action: utter_need_more_assistance
+
+- story: path_nlp
+  steps:
+  - intent: can_projects
+  - action: utter_can_projects
+  - intent: done_projects
+  - action: utter_projects
+  - intent: project_nlp
+  - action: utter_project_nlp
+  - action: utter_need_more_assistance
+
+- story: can_projects
+  steps:
+  - intent: can_projects
+  - action: utter_can_projects
+
+- story: done_projects
+  steps:
+  - intent: done_projects
+  - action: utter_projects
+
+- story: project_nlp
+  steps:
+  - intent: project_nlp
+  - action: utter_project_nlp
+
+- story: project_computer_vision
+  steps:
+  - intent: project_computer_vision
+  - action: utter_project_computer_vision
+
+- story: location
+  steps: 
+  - intent: location
+  - action: utter_location
+
+- story: experience
+  steps:
+  - intent: experience
+  - action: utter_experience
+
+- story: skills
+  steps:
+  - intent: skills
+  - action: utter_skills
+
+- story: interests
+  steps:
+  - intent: interests
+  - action: utter_interests
+
+- story: education
+  steps:
+  - intent: education
+  - action: utter_education
+
+
+- story: introduction
+  steps:
+  - intent: intro
+  - action: utter_intro
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

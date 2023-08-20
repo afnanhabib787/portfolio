@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - intro
+  - can_projects
+  - done_projects
+  - project_computer_vision
+  - project_nlp
+  - location
+  - experience
+  - education
+  - skills
+  - interests
+
+responses:
+  utter_intro:
+  - text: "I am a professional AI Engineer having two years of work experience is the AI domain."
+
+  utter_need_more_assistance:
+  - text: "If you need further information, you can ask here, or contact me, here are the contact details."
+
+  utter_projects:
+  - text: "I have done several projects related to machine learning, deep learning, computer vision, nlp, scrapping, API development, which project details you want specifically?"
+
+  utter_project_computer_vision:
+  - text: "Some of the projects I have done related to computer vsion are: SOT, Face Recognition, Gender Recognition, Mask Detection, Pose Estimation, Tracking, Eye Gaze Estimation, Post Analysis of interview. Futher details of these projects can be found under projects section, or you can contact Afnan to enquire more."
+
+  utter_project_nlp:
+  - text: "Some of the projects I have done related to NLP are: Fine tuning of LLaMa on custom dataset, Twitter Scrapper, Project Sniffer. Futher details of these projects can be found under projects section, or you can contact Afnan to enquire more."
+
+  utter_location:
+  - text: "I am currently in Islamabad"
+
+  utter_experience:
+  - text: "I have a total of 2 years of experience, details are as follows: PkTeam (from April 2021 to Oct 2021), Genesis IT Lab (from Oct 2021 to Current)"
+
+  utter_skills:
+  - text: "My skillset includes: Python, Pytorch, Tensorflow, Numpy, Pandas, OpenCV, TensorRT, Microcontroller, Streamlit, Flask, FastAPI, Redis, MongoDB, Docker, Linux. Moreover, I am continously improving his skills, you can contact him to enquire further."
+
+  utter_interests:
+  - text: "I am mostly interested in online games, technology, and travelling"
+
+  utter_education:
+  - text: "I have done BS in Telecommunication Engineering from UET Peshawar, Mardan Campus on Oct 2021"
+
+  utter_can_projects:
+  - text: "I can work on projects related to Machine Learning, Deep Learning, Computer Vision, NLP, Automation, Scrapping, API Development"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
