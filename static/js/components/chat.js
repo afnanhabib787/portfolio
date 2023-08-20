@@ -268,7 +268,7 @@ async function send(message) {
 // eslint-disable-next-line no-unused-vars
 function actionTrigger() {
   $.ajax({
-    url: `https://4fcc-34-125-201-68.ngrok.io/conversations/${sender_id}/execute`,
+    url: `https://019d-34-125-201-68.ngrok.io/conversations/${sender_id}/execute`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
