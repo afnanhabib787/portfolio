@@ -9,7 +9,7 @@
 .widget {
   display: none;
   width: 350px;
-  right: 15px;
+  right: 120px;
   height: 500px;
   bottom: 5%;
   position: fixed;
@@ -191,14 +191,14 @@ blockquote {
 .imgProfile {
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
   border-radius: 50px;
-  width: 60%;
+  width: 100px;
 }
 
 .profile_div {
   /* display: none; */
   position: fixed;
   padding: 5px;
-  width: 10%;
+  width: 15%;
   bottom: 0;
   right: 0;
   cursor: pointer;
@@ -361,7 +361,7 @@ blockquote {
 }
 
 .stars-outer::before {
-  content: "\f006 \f006 \f006 \f006 \f006";
+  content: '\f006 \f006 \f006 \f006 \f006';
 }
 
 .stars-inner {
@@ -374,7 +374,7 @@ blockquote {
 }
 
 .stars-inner::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
+  content: '\f005 \f005 \f005 \f005 \f005';
   color: #f8ce0b;
 }
 
