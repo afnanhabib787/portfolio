@@ -9,7 +9,7 @@
 .widget {
   display: none;
   width: 350px;
-  right: 120px;
+  right: 200px;
   height: 500px;
   bottom: 5%;
   position: fixed;
@@ -81,23 +81,26 @@ div.chats::-webkit-scrollbar {
   border-radius: 5px 20px 20px 20px;
 }
 
-div.chats > pre {
+div.chats>pre {
   font-family: monospace, monospace;
   font-size: 1em;
   margin: 0 !important;
   /* display: inline !important; */
   white-space: initial !important;
 }
-div.chats > ul:not(.browser-default) {
+
+div.chats>ul:not(.browser-default) {
   padding-left: 1em;
 }
-div.chats > ul:not(.browser-default) > li {
+
+div.chats>ul:not(.browser-default)>li {
   list-style-type: initial;
 }
 
-div.chats > span.botMsg > ol {
+div.chats>span.botMsg>ol {
   padding-left: 1em;
 }
+
 textarea {
   box-shadow: none;
   resize: none;
@@ -191,17 +194,31 @@ blockquote {
 .imgProfile {
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
   border-radius: 50px;
-  width: 100px;
+  width: 60%;
 }
 
 .profile_div {
   /* display: none; */
   position: fixed;
   padding: 5px;
-  width: 15%;
-  bottom: 0;
-  right: 0;
+  width: 10%;
+  bottom: 5rem;
+  right: 5rem;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .widget {
+    bottom: 10%;
+    right: 10px;
+    width: 300px;
+  }
+
+  .profile_div {
+    bottom: 6rem;
+    right: 1rem;
+    width: 20%;
+  }
 }
 
 /* css for dropdown menu of the bot */
@@ -220,8 +237,8 @@ blockquote {
   margin-top: 3%;
 }
 
-.dropdown-content li > a,
-.dropdown-content li > span {
+.dropdown-content li>a,
+.dropdown-content li>span {
   color: #060dcfc7;
 }
 
@@ -230,6 +247,7 @@ blockquote {
     opacity: 0;
     transform: translate(0px, 10px);
   }
+
   100% {
     opacity: 1;
     transform: translate(0px, 0px);
@@ -310,7 +328,7 @@ blockquote {
   margin-left: 5px;
 }
 
-.content_data > .row .col {
+.content_data>.row .col {
   padding: 5px;
 }
 
@@ -516,7 +534,7 @@ div.content_data::-webkit-scrollbar {
   width: 0 !important;
 }
 
-.cards_scroller > div.carousel_cards {
+.cards_scroller>div.carousel_cards {
   margin: 5px;
   scroll-snap-align: center;
   position: relative;
@@ -538,6 +556,7 @@ div.content_data::-webkit-scrollbar {
     -o-transform: translatex(-10px);
     transform: translatex(-10px);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translatex(0);
@@ -629,7 +648,7 @@ div.content_data::-webkit-scrollbar {
   word-wrap: break-word;
 }
 
-.dropDownMsg > select {
+.dropDownMsg>select {
   border: 0px solid #f2f2f2;
 }
 
@@ -689,6 +708,7 @@ div.content_data::-webkit-scrollbar {
   height: 60%;
   border-radius: 10px;
 }
+
 /* .container {
   position: relative;
   z-index: 99999;
@@ -729,16 +749,16 @@ div.content_data::-webkit-scrollbar {
   color: #060dcfc7;
 }
 
-ul.collapsible > li:first-child .collapsible-header {
+ul.collapsible>li:first-child .collapsible-header {
   border-radius: 20px 20px 0px 0px;
 }
 
-ul.collapsible > li:last-child .collapsible-header {
+ul.collapsible>li:last-child .collapsible-header {
   color: #060dcfc7;
   border-radius: 0px 0px 20px 20px;
 }
 
-ul.collapsible > li:last-child .collapsible-body {
+ul.collapsible>li:last-child .collapsible-body {
   border-bottom: none;
 }
 
@@ -763,7 +783,7 @@ ul.collapsible > li:last-child .collapsible-body {
   border-radius: 5px 20px 20px 20px;
 }
 
-.botTyping > div {
+.botTyping>div {
   width: 10px;
   height: 10px;
   background-color: #060dcfc7;
@@ -785,23 +805,27 @@ ul.collapsible > li:last-child .collapsible-body {
 }
 
 @-webkit-keyframes sk-bouncedelay {
+
   0%,
   80%,
   100% {
     -webkit-transform: scale(0);
   }
+
   40% {
     -webkit-transform: scale(1);
   }
 }
 
 @keyframes sk-bouncedelay {
+
   0%,
   80%,
   100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
