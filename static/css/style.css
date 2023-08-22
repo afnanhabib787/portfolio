@@ -209,7 +209,7 @@ blockquote {
 
 @media (max-width: 600px) {
   .widget {
-    bottom: 10%;
+    bottom: 13%;
     right: 10px;
     width: 300px;
   }
