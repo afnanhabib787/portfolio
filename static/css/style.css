@@ -219,6 +219,9 @@ blockquote {
     right: 1rem;
     width: 20%;
   }
+  .usrInput {
+    width: 75%;
+  }
 }
 
 /* css for dropdown menu of the bot */
